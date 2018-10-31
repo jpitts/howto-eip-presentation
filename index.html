@@ -1,0 +1,622 @@
+	<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>How to EIP</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/semeth.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!--
+					What EIP
+				//-->
+
+				<section>
+
+					<h2>How To Ethereum Improvement Proposal</h2>
+
+					<p class="fragment">
+						Because you may want to...
+					<img src="images/erc-20.png" style="border:0px;"/>
+					</p>
+				</section>
+
+
+
+				<!--
+					Resources
+				//-->
+
+				<section>
+
+					<p>Before this gets started...</p>
+					<h2>Some Resources for EIPs</h2>
+
+					<blockquote>
+					<p>
+						List of EIPs that made it to draft
+						<br/>
+						<a href="https://eips.ethereum.org/" >https://eips.ethereum.org/</a>
+					</p>
+					</blockquote>
+
+
+					<blockquote>
+					<p>
+						EIP-1: Purpose and Guidelines
+						<br/>
+						<a href="https://eips.ethereum.org/EIPS/eip-1">https://eips.ethereum.org/EIPS/eip-1</a>
+					</p>
+					</blockquote>
+
+				</section>
+
+
+				<!--
+					What EIP
+				//-->
+
+				<section>
+
+					<h2>What are EIPs?</h2>
+
+
+					<blockquote>
+						"Ethereum Improvement Proposals describe standards for the Ethereum platform, including core protocol specs, client APIs, and contract standards."
+					</blockquote>
+
+				</section>
+
+				<!--
+					What ERC
+				//-->
+
+				<section>
+
+					<h2>What are ERCs?</h2>
+
+
+					<blockquote>
+						"ERCs are a type of EIP which describe application-level standards and conventions, including contract standards."
+					</blockquote>
+
+				</section>
+
+
+				<!--
+					What Standard
+				//-->
+
+				<section>
+
+					<h2>What is a technical standard?</h2>
+
+					<blockquote>
+						A formal document which establishes uniform engineering or technical criteria, methods, processes, and practices. 
+					</blockquote>
+
+				</section>
+
+
+				<!--
+					Proposal
+				//-->
+
+				<section>
+
+					<h2>What drives the EIP process?</h2>
+
+					<ul>
+						<li>The process exists to create high quality proposals, accepted by consensus of the community</li>
+						<li>For quality, we seek competent input</li>
+						<li>For acceptance, we seek buy-in from stakeholders</li>
+
+					</ul>
+
+				</section>
+
+				<!---
+					EIPs in GitHub
+				//-->
+
+				<section>
+
+					<h2>The EIPs are in a git repo!</h2>
+
+					<blockquote>
+						"Because the EIPs are maintained as text files in a versioned repository, their revision history is the historical record of the feature proposal."
+					</blockquote>
+
+					<p>
+						<a href="https://github.com/ethereum/EIPs">https://github.com/ethereum/EIPs</a>
+					</p>
+
+				</section>
+
+
+				<!-- 
+					The Work
+				//-->
+
+				<section>
+
+					<h2>EIP-1: The EIP Work</h2>
+
+					<blockquote>
+					<ul>
+						<li class="fragment"><em>Needs-finding, defining requirements, engineering, prototyping</em></li>
+						<li>Write the EIP using the style and format described</li>
+						<li>Shepherd the discussions in the appropriate forums</li>
+						<li>Build community consensus around the idea</li>
+					</blockquote>
+
+				</section>
+
+
+				<!-- 
+					Building Consensus
+
+				<section>
+
+					<h2>Building Consensus</h2>
+
+
+					<blockquote cite="https://goo.gl/DrJRJV">
+
+					"The EIP author is responsible for building consensus within the community and documenting dissenting opinions."
+
+					</blockquote>
+
+				</section>
+
+				//-->
+
+
+				<!-- 
+					Editors
+				//-->
+
+				<section>
+
+					<h2>EIP Editor Responsibilities</h2>
+
+					<ul>
+						<li>Read the EIP to check if it is ready
+						<li>Check the EIP for language</li>
+						<li>Assign an EIP number</li>
+						<li>Merge the corresponding pull request</li>
+					</ul>
+
+					<blockquote class="fragment">
+						"The editors don't pass judgment on EIPs. We merely do the administrative & editorial part."
+					</blockquote>
+
+				</section>
+
+
+				<!-- 
+					Editors
+				//-->
+
+				<section>
+
+					<h2>EIP Editors</h2>
+
+					<p>
+					The current EIP editors are:
+					</p>
+
+					<blockquote>
+					* Nick Johnson (@arachnid)<br/>
+					* Casey Detrio (@cdetrio)<br/>
+					* Hudson Jameson (@Souptacular)<br/>
+					* Vitalik Buterin (@vbuterin)<br/>
+					* Nick Savers (@nicksavers)<br/>
+					* Martin Becze (@wanderer)
+					</blockquote>
+
+				
+				</section>
+
+
+
+				<!---
+					Types of EIPs Expanded
+				//--->
+
+				<section>
+
+					<h2>EIP-1: Types of EIPs</h2>
+
+					<p>
+						<ul>
+							<li class="fragment"><strong>Standard Track EIPs</strong></li>
+								<ul>
+									<li class="fragment"><strong>Core</strong> - improvements requiring a consensus fork</li>
+									<li class="fragment"><strong>Networking</strong> - devp2p, LES</li>
+									<li class="fragment"><strong>Interface</strong> - client API/RPC specifications</li>
+									<li class="fragment"><strong>ERC</strong> - app-level standards and conventions</li>
+								</ul>
+							<li class="fragment"><strong>Informational EIPs</strong> - general guidelines or information</li>
+							<li class="fragment"><strong>Meta EIPs</strong> - includes decision-making surrounding Ethereum</li>
+						</ul>
+					</p>
+
+				</section>
+
+
+				<!-- 
+					Focusing on Core EIPs
+				//-->
+
+				<section>
+
+					<h2>Focusing on Core EIPs</h2>
+
+				</section>
+
+
+				<!-- 
+					Parties
+				//-->
+
+				<section>
+
+					<h2>Who is involved in Core EIPs?</h2>
+
+					<ul>
+						<li>You, the champion or EIP author</li>
+						<li>EIP editors</li>
+						<li>Ethereum Core Developers</li>
+						<li class="fragment"><span><em>Are there other important stakeholders?</em></span></li>
+					</ul>
+
+				</section>
+
+
+				<!---
+					What is a Core EIP?
+
+
+				<section>
+
+					<h2>Core EIPs</h2>
+
+					<ul>
+
+						<li>improvements requiring a consensus fork</li>
+						<li>changes that are not necessarily consensus critical but may be relevant to "core dev" discussions <span class="fragment"><em>(huh?)</em></span></li>
+
+				</section>
+				//--->
+
+				<!-- 
+					EIP Workflow
+				//-->
+
+				<section>
+
+					<h2>Workflow of a successful Core EIP</h2>
+
+					<hr/>
+
+					<p>
+					Initial Submission
+
+					<ul>
+						<li>
+						Fork the repo in GitHub.
+						</li>
+						<li>
+						Add your EIP to your fork. Use the EIP template.
+						</li>
+						<li>
+						Submit a Pull Request & Status Change to the repo.
+						</li>
+					</ul>
+					</p>
+
+					<hr/>
+
+					<p class="fragment">
+					
+					Steps Toward Final
+					<br/><br/>
+
+					<span>
+					WIP -> DRAFT -> LAST CALL -> ACCEPTED -> FINAL
+					</span>
+
+					</p>
+				</section>
+
+
+				<!--
+					Workflow: WIP
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Work In Process</h2>
+
+					<p>
+					<strong>WIP</strong> -> DRAFT -> LAST CALL -> ACCEPTED -> FINAL
+					</p>
+
+					<hr/>
+
+					<ul>
+						<li>Champion creates a WIP EIP as a pull request</li>
+						<li>Each status change is requested by the EIP author and reviewed by the EIP editors</li>
+					</ul>
+				</section>
+
+
+				<!--
+					Workflow: Draft
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Draft</h2>
+
+					<p>
+					WIP -> <strong>DRAFT</strong> -> LAST CALL -> ACCEPTED -> FINAL
+					</p>
+
+					<hr/>
+
+					Champion seeks support, creates a draft EIP as a pull request.
+
+				</section>
+
+				<!--
+					Workflow: Draft Outcome
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Draft</h2>
+
+					<blockquote>
+						SUCCESS<br/>
+					<ul>
+					<li>IF agreeable, EIP editor will assign the EIP a number</li>
+					</ul>
+					</blockquote>
+
+					<blockquote>
+						FAIL<br/>
+						<ul>
+							<li>unfocused, broad, duplication of effort</li>
+							<li>technically unsound</li>
+							<li>not addressing backwards compatibility</li>
+							<li>not in keeping with the Ethereum philosophy <em class="fragment">(huh?)</em></li>
+						</ul>
+					</blockquote>
+
+				</section>
+
+
+			<!--
+					Workflow: Last Call
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Last Call</h2>
+
+					<p>
+					WIP -> DRAFT -> <strong>LAST CALL</strong> -> ACCEPTED -> FINAL
+					</p>
+
+					<hr/>
+
+					Champion creates a Last Call EIP as a pull request
+					<br/>
+					Notifies key stakeholders, etc.
+				</section>
+
+				<!--
+					Workflow: Last Call Outcome
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Last Call</h2>
+
+					
+					<blockquote>
+						SUCCESS<br/>
+					<ul>
+					<li>IF agreeable, the EIP editor sets a review end date</li>
+					</ul>
+					</blockquote>
+
+					<blockquote>
+						FAIL<br/>
+						<ul>
+							<li>material changes are still expected to be made to the draft</li>
+						</ul>
+					</blockquote>
+
+					<blockquote>
+						FAIL++<br/>
+						<ul>
+							<li>material changes or substantial unaddressed technical complaints will cause the EIP to revert to Draft!</li>
+						</ul>
+					</blockquote>
+
+				</section>
+
+
+				<!--
+					Workflow: Accepted
+				-->
+
+				<section>
+
+					<h2>Core EIP Workflows: Accepted</h2>
+
+					<p>
+					WIP -> DRAFT -> LAST CALL -> <strong>ACCEPTED</strong> -> FINAL
+					</p>
+
+					<hr/>
+
+					<ul>
+						<li>this is now in the hands of the client developers.</li>
+						<li>developer decisions to implement is NOT part of the EIP process!</li>
+					</ul>
+
+				</section>
+
+
+				<section>
+
+					<h2>Workflows: Final</h2>
+
+					<p>
+					WIP -> DRAFT -> LAST CALL -> ACCEPTED -> <strong>FINAL</strong>
+					</p>
+
+					<hr/>
+
+
+					<ul>
+						<li>a Last Call without material changes or unaddressed technical complaints will become Final</li>
+
+						<li>Core EIPs must be implemented in at least three viable Ethereum clients</li>
+
+						<li>when the implementation is complete and adopted by the community, the status will be changed to Final</li>
+					</ul>
+					
+				</section>
+
+	
+				<section>
+
+					<h2>Format of EIPs</h2>
+
+					<p>
+					Each EIP should have the following parts:
+					</p>
+
+					<table border="0">
+						<tr>
+							<td valign="top" align="left">
+					Preamble<br/>
+					Simple Summary <br/>
+					Abstract<br/>
+					Motivation<br/>
+					Specification
+
+							</td>
+ 
+							<td valign="top" align="left">
+					Rationale<br/>
+					Backwards Compatibility<br/>
+					Test Cases<br/>
+					Implementations<br/>
+					Copyright Waiver
+					
+							</td>
+						</tr>
+					</table>
+
+				</section>
+
+				<!-- 
+					Presentation Credits
+				//-->
+
+				<section>
+						<img src="./images/all-the-things-150x150.jpg" style="width:100px;height:100px; border:0px;" />
+					<br/>
+					Jamie
+					<br/>
+					<a href="http://twitter.com/jemenger">http://twitter.com/jemenger</a>
+
+					<hr/>
+
+					This presentation was built with reveal.js
+					<a href="https://github.com/hakimel/reveal.js" target="_new">https://github.com/hakimel/reveal.js</a>
+				</section>
+
+				<section>
+					&nbsp;
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## That's it.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Done.
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+					## Fin.
+
+					</textarea>
+				</section>
+
+				
+				<section data-markdown>
+					<textarea data-template>
+
+					&nbsp;
+
+					</textarea>
+				</section>
+
+			
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
